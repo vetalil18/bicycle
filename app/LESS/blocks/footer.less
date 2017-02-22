@@ -1,0 +1,32 @@
+@import url(../variables.less);
+@import url(../mixins.less);
+
+.footer-page {
+	background-color: #fcff19;
+	padding: 15px 0;
+
+}
+.footer-page__wrapper {
+	.container();
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-page__nav {
+	display: flex;
+}
+.footer-page__nav-item {
+	margin-right: 30px;
+}
+.footer-page__nav-item:last-child {
+	margin-right: 0px;
+}
+.footer-page__nav-item-link {
+	color: rgb(1, 1, 1);
+	font-family: 'Roboto';
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 32px;
+	text-decoration: none;
+	text-transform: uppercase;
+}

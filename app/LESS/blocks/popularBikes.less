@@ -1,0 +1,99 @@
+@import url(../variables.less);
+@import url(../mixins.less);
+
+
+.popular-bikes {
+	padding-top: 70px;
+	padding-bottom: 35px;
+}
+.popular-bikes__title {
+	.titleBlocks();
+}
+.popular-bikes__wrapper {
+	width: 100%;
+	max-width: 1874px;
+	margin: 0 auto;
+}
+.popular-bikes__items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.popular-bikes__item {
+	width: 490px;
+}
+
+.popular-bikes__item img {
+	width: 490px;
+	height: 391px;
+}
+.popular-bikes__item-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+.popular-bikes__item-bottom-left {
+	display: flex;
+	flex-direction: column;
+}
+.popular-bikes__item-bottom-right {
+	display: flex;
+}
+
+
+
+
+@media (max-width: 1500px) {
+	.popular-bikes__items {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.popular-bikes__item-bottom-left-name {
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+.popular-bikes__item-bottom-left-price {
+	color: black;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+.popular-bikes__item-bottom-right-buy {
+	margin-left: 10px;
+
+	color: white;
+	font-family: 'Roboto';
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 23px;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	padding: 10px 30px;
+	background-color: rgb(183, 183, 183);
+	border-radius: 10px;
+}
+
+.option {
+	border-radius: 10px;
+}
+.ui-selectmenu-button {
+	background: none;
+	border-radius: 10px;
+	text-align: center;
+}
+.ui-selectmenu-text {
+	text-align: center;
+	color: black;
+	font-family: 'Roboto';
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 32px;
+	text-transform: uppercase;
+
+	outline: none;
+}
