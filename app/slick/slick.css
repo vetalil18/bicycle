@@ -139,3 +139,10 @@
     right: 0;
     background-position: 58px 0;
 }
+
+@media (max-width: 768px) {
+    .slick-arrow {
+        width: 0;
+        height: 0;
+    }
+}

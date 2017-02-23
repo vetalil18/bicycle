@@ -2084,6 +2084,11 @@ a.ui-button:active,
   margin: 0 auto;
   padding: 0 50px;
 }
+@media (max-width: 768px) {
+  .header-page__wrapper {
+    padding: 0 15px;
+  }
+}
 .header-page__main-nav {
   display: flex;
   justify-content: space-between;
@@ -2097,8 +2102,14 @@ a.ui-button:active,
   padding: 0 50px;
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .header-page__slider {
+    padding: 0 15px;
+  }
+}
 .header-page__main-nav-items {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 .header-page__main-nav-item {
@@ -2220,6 +2231,9 @@ a.ui-button:active,
 .closeNav {
   display: none;
 }
+.slick-initialized {
+  width: 100%;
+}
 @media (max-width: 768px) {
   .openNav,
   .closeNav {
@@ -2312,8 +2326,13 @@ a.ui-button:active,
     color: white;
     margin-bottom: 20px;
   }
-  .headerSlider__item-text .mark {
+  .mark {
     color: #fcff19;
+  }
+  .headerSlider__item-btn:hover,
+  .headerSlider__item-btn:active {
+    background-color: #fff;
+    color: #000;
   }
 }
 .categories {
@@ -2327,6 +2346,11 @@ a.ui-button:active,
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 50px;
+}
+@media (max-width: 768px) {
+  .categories__wrapper {
+    padding: 0 15px;
+  }
 }
 .categories__items {
   display: flex;
@@ -2342,6 +2366,11 @@ a.ui-button:active,
   flex-direction: column;
   align-items: center;
   padding-top: 137px;
+}
+@media (max-width: 345px) {
+  .categories__item {
+    width: 100%;
+  }
 }
 .categories__item:hover::before {
   content: '';
@@ -2454,9 +2483,21 @@ a.ui-button:active,
 .popular-bikes__item {
   width: 490px;
 }
+@media (max-width: 490px) {
+  .popular-bikes__item {
+    width: 100%;
+  }
+  .popular-bikes__item-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .popular-bikes__item-bottom-left {
+    margin-bottom: 20px;
+  }
+}
 .popular-bikes__item img {
-  width: 490px;
-  height: 391px;
+  width: 100%;
+  height: auto;
 }
 .popular-bikes__item-bottom {
   display: flex;
@@ -2530,6 +2571,11 @@ a.ui-button:active,
   margin: 0 auto;
   padding: 0 50px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .contact-us__wrapper {
+    padding: 0 15px;
+  }
 }
 .contact-us__title {
   color: black;
@@ -2605,6 +2651,14 @@ a.ui-button:active,
 .contact-send:active {
   box-shadow: inset 0 -1px 3px 0 black;
 }
+@media (max-width: 480px) {
+  .contact-us__form {
+    width: 100%;
+  }
+  .contact-input {
+    width: 100%;
+  }
+}
 .footer-page {
   background-color: #fcff19;
   padding: 15px 0;
@@ -2617,6 +2671,11 @@ a.ui-button:active,
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .footer-page__wrapper {
+    padding: 0 15px;
+  }
 }
 .footer-page__nav {
   display: flex;
@@ -2635,4 +2694,16 @@ a.ui-button:active,
   line-height: 32px;
   text-decoration: none;
   text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .footer-page__wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-page__nav {
+    flex-direction: column;
+  }
+  .footer-page__logo {
+    margin-bottom: 20px;
+  }
 }
